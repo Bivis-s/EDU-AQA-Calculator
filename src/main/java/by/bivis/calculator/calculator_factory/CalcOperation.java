@@ -1,4 +1,6 @@
-package by.bivis.calculator;
+package by.bivis.calculator.calculator_factory;
+
+import by.bivis.calculator.IncorrectCalcException;
 
 @FunctionalInterface
 public interface CalcOperation<T> {

@@ -1,5 +1,7 @@
 package by.bivis.calculator;
 
+import by.bivis.calculator.calculator_factory.CalculatorSettings;
+
 public class Calculator {
     private final CalculatorSettings calculatorSettings;
 

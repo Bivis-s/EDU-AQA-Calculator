@@ -1,4 +1,4 @@
-package by.bivis.calculator;
+package by.bivis.calculator.calculator_factory;
 
 public class CalculatorSettings {
     private final CalcOperation<Double> addition;
@@ -6,7 +6,7 @@ public class CalculatorSettings {
     private final CalcOperation<Double> multiplication;
     private final CalcOperation<Double> division;
 
-    public CalculatorSettings(CalcOperation<Double> addition, CalcOperation<Double> subtraction,
+    protected CalculatorSettings(CalcOperation<Double> addition, CalcOperation<Double> subtraction,
                               CalcOperation<Double> multiplication, CalcOperation<Double> division) {
         this.addition = addition;
         this.subtraction = subtraction;
