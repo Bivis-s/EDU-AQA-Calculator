@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="calculation_factory">
+    <test name="CalculationFactory">
+        <groups>
+            <run>
+                <include name="calculator_factory"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="calculator_tests.*"/>
+        </packages>
+    </test>
+</suite>

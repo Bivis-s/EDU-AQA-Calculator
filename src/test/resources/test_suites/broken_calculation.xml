@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="broken_calculation">
+    <test name="BrokenCalculation">
+        <groups>
+            <run>
+                <include name="broken_type"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="calculator_tests.*"/>
+        </packages>
+    </test>
+</suite>
