@@ -16,7 +16,7 @@ public class TestData {
                 {-4678, -7302, -11980},
                 {0, -5, -5},
                 {5.5, 4.5, 10},
-                {-4.5, 5.6, 1.1}, //TODO FAILS REWRITE CALCULATOR USING BigDecimal
+                {-4.5, 5.6, 1.1},
                 {786787.9, 0.1, 786788},
                 {-56.6, -14.25, -70.85}
         };
@@ -78,48 +78,4 @@ public class TestData {
                 {-8184.552, -85.9, 95.28}
         };
     }
-
-//    @DataProvider(name = "incorrect addition data")
-//    public Object[][] provideIncorrectAdditionData() {
-//        return new Object[][]{
-//                {, ,},
-//                {, ,},
-//                {, ,},
-//                {, ,},
-//                {, ,}
-//        };
-//    }
-//
-//    @DataProvider(name = "incorrect subtraction data")
-//    public Object[][] provideIncorrectSubtraction() {
-//        return new Object[][]{
-//                {, ,},
-//                {, ,},
-//                {, ,},
-//                {, ,},
-//                {, ,}
-//        };
-//    }
-//
-//    @DataProvider(name = "incorrect multiplication data")
-//    public Object[][] provideIncorrectMultiplicationData() {
-//        return new Object[][]{
-//                {, ,},
-//                {, ,},
-//                {, ,},
-//                {, ,},
-//                {, ,}
-//        };
-//    }
-//
-//    @DataProvider(name = "incorrect division data")
-//    public Object[][] provideIncorrectDivisionData() {
-//        return new Object[][]{
-//                {, ,},
-//                {, ,},
-//                {, ,},
-//                {, ,},
-//                {, ,}
-//        };
-//    }
 }
