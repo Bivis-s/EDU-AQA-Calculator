@@ -48,7 +48,7 @@ public class SettingsData {
 
     // Casual Addition CalcOperation
     public static final CalcOperation<Double> CASUAL_ADDITION =
-            (d1, d2) -> d1 + d2;
+            Double::sum;
     // Casual Subtraction CalcOperation
     public static final CalcOperation<Double> CASUAL_SUBTRACTION =
             (d1, d2) -> d1 - d2;
@@ -102,7 +102,7 @@ public class SettingsData {
                 if (Math.random() > 0.5) {
                     return getAccurateAddition(d1, d2);
                 } else {
-                    throw new CalculatorException("You underestimate my brokenness");
+                    throw new CalculatorException("You underestimate my instability");
                 }
             };
     // Random Subtraction CalcOperation returns Accurate result (50%) or throws CalculatorException (50%)
@@ -111,7 +111,7 @@ public class SettingsData {
                 if (Math.random() > 0.5) {
                     return getAccurateSubtraction(d1, d2);
                 } else {
-                    throw new CalculatorException("You underestimate my brokenness");
+                    throw new CalculatorException("You underestimate my instability");
                 }
             };
     // Random Multiplication CalcOperation returns Accurate result (50%) or throws CalculatorException (50%)
@@ -120,7 +120,7 @@ public class SettingsData {
                 if (Math.random() > 0.5) {
                     return getAccurateMultiplication(d1, d2);
                 } else {
-                    throw new CalculatorException("You underestimate my brokenness");
+                    throw new CalculatorException("You underestimate my instability");
                 }
             };
     // Unstable Division CalcOperation returns Accurate result (50%) or throws CalculatorException (50%)
@@ -129,20 +129,20 @@ public class SettingsData {
                 if (Math.random() > 0.5) {
                     return getAccurateDivision(d1, d2);
                 } else {
-                    throw new CalculatorException("You underestimate my brokenness");
+                    throw new CalculatorException("You underestimate my instability");
                 }
             };
 
     // Broken Addition CalcOperation increased by 1
     public static final CalcOperation<Double> BROKEN_ADDITION =
             (d1, d2) -> d1 + d2 + 1;
-    // Broken Subtraction CalcOperation with swapped subtrahend and minuend
+    // Broken Subtraction CalcOperation with swapped subtrahend and minuend and decreased  by 3
     public static final CalcOperation<Double> BROKEN_SUBTRACTION =
-            (d1, d2) -> d2 - d1;
-    // Broken Multiplication CalcOperation with answer divided by 3
+            (d1, d2) -> d2 - d1 - 3;
+    // Broken Multiplication CalcOperation with answer divided by 3 and increased by 2
     public static final CalcOperation<Double> BROKEN_MULTIPLICATION =
-            (d1, d2) -> d1 * d2 / 3;
-    // Broken Division CalcOperation with squared dividend
+            (d1, d2) -> ((d1 * d2) / 3) + 2;
+    // Broken Division CalcOperation with squared dividend increased by 5
     public static final CalcOperation<Double> BROKEN_DIVISION =
-            (d1, d2) -> d1 * d1 / d2;
+            (d1, d2) -> ((d1 * d1) / d2) + 5;
 }

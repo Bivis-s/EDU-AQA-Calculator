@@ -6,7 +6,7 @@ import by.bivis.calculator.calculator_factory.calculator_settings.settings_class
 
 public class CalculatorFactory {
     /**
-     * Returns the calculator with one of the settings
+     * Returns the calculator with one of the settings if there is no such setting, throws an Exception
      *
      * @param type CalculatorSettingsType
      * @return new Calculator Object
