@@ -12,14 +12,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import static by.bivis.calculator.calculator_factory.calculator_settings.CalculatorSettingsTypes.CASUAL;
+import static by.bivis.calculator.calculator_factory.calculator_settings.CalculatorSettingsTypes.FLOAT_INACCURATE;
 
 @Listeners(UnstableTestListener.class)
 
 public class CasualCalculationTest extends AbstractTest {
     @BeforeClass(alwaysRun = true)
     public void createCalculator() {
-        calculator = CalculatorFactory.createCalculator(CASUAL);
+        calculator = CalculatorFactory.createCalculator(FLOAT_INACCURATE);
     }
 
     @AfterClass(alwaysRun = true)

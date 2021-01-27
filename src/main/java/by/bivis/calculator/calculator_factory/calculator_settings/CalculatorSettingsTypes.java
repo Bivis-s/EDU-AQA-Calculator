@@ -9,7 +9,7 @@ public enum CalculatorSettingsTypes {
     /**
      * Casual calculator setting, calculator uses standard + - * /
      */
-    CASUAL,
+    FLOAT_INACCURATE,
 
     /**
      * Random calculator setting, 25% returns accurate result 75% returns 0.0

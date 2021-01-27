@@ -40,7 +40,7 @@ public class Run {
                         state = false;
                         break;
                     case 2:
-                        calculator = CalculatorFactory.createCalculator(CASUAL);
+                        calculator = CalculatorFactory.createCalculator(FLOAT_INACCURATE);
                         state = false;
                         break;
                     case 3:

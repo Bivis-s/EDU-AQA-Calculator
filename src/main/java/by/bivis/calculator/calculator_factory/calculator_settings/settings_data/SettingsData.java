@@ -47,16 +47,16 @@ public class SettingsData {
             SettingsData::getAccurateDivision;
 
     // Casual Addition CalcOperation
-    public static final CalcOperation<Double> CASUAL_ADDITION =
+    public static final CalcOperation<Double> FLOAT_INACCURATE_ADDITION =
             Double::sum;
     // Casual Subtraction CalcOperation
-    public static final CalcOperation<Double> CASUAL_SUBTRACTION =
+    public static final CalcOperation<Double> FLOAT_INACCURATE_SUBTRACTION =
             (d1, d2) -> d1 - d2;
     // Casual Multiplication CalcOperation
-    public static final CalcOperation<Double> CASUAL_MULTIPLICATION =
+    public static final CalcOperation<Double> FLOAT_INACCURATE_MULTIPLICATION =
             (d1, d2) -> d1 * d2;
     // Casual Division CalcOperation
-    public static final CalcOperation<Double> CASUAL_DIVISION =
+    public static final CalcOperation<Double> FLOAT_INACCURATE_DIVISION =
             (d1, d2) -> d1 / d2;
 
     // Random Addition CalcOperation returns Accurate result (25%) or 0.0 (75%)

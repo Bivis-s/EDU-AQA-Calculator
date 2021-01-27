@@ -15,8 +15,8 @@ public class CalculatorFactory {
         switch (type) {
             case ACCURATE:
                 return new Calculator(new AccurateCalculatorSettings());
-            case CASUAL:
-                return new Calculator(new CasualCalculatorSettings());
+            case FLOAT_INACCURATE:
+                return new Calculator(new FloatInaccurateCalculatorSettings());
             case RANDOM:
                 return new Calculator(new RandomCalculatorSettings());
             case UNSTABLE:

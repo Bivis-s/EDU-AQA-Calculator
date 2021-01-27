@@ -16,12 +16,12 @@ public class CalculatorFactoryTest {
                 AccurateCalculatorSettings.class);
     }
 
-    @Test(description = "Create Calculator using Incorrect Type parameter",
+    @Test(description = "Create Calculator using Float Inaccurate Type parameter",
             groups = {"calculator", "positive", "calculator_factory"},
             priority = -5)
-    public void createCasualCalculatorTest() {
-        Assert.assertEquals(CalculatorFactory.createCalculator(CASUAL).getCalculatorSettings().getClass(),
-                CasualCalculatorSettings.class);
+    public void createFloatInaccurateCalculatorTest() {
+        Assert.assertEquals(CalculatorFactory.createCalculator(FLOAT_INACCURATE).getCalculatorSettings().getClass(),
+                FloatInaccurateCalculatorSettings.class);
     }
 
     @Test(description = "Create Calculator using Random Type parameter",

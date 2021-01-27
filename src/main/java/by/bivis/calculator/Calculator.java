@@ -8,7 +8,7 @@ public class Calculator {
 
     public Calculator(CalculatorSettings calculatorSettings) {
         this.calculatorSettings = calculatorSettings;
-        state = false;
+        state = true;
     }
 
     public CalculatorSettings getCalculatorSettings() {
