@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="unstable_calculation">
+    <test name="UnstableCalculation">
+        <groups>
+            <run>
+                <include name="unstable_type"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="calculator_tests.*"/>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="random_calculation">
+    <test name="RandomCalculation">
+        <groups>
+            <run>
+                <include name="random_type"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="calculator_tests.*"/>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="test_all_calculator" parallel="methods" thread-count="50">
+    <test name="TestAllCalculator">
+        <groups>
+            <run>
+                <include name="calculator"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="calculator_tests.*"/>
+        </packages>
+    </test>
+</suite>
