@@ -27,7 +27,7 @@ public class BrokenCalculationTest extends AbstractTest {
     @Test(groups = {"calculator", "positive", "broken_type"},
             dataProvider = "correct addition data", dataProviderClass = TestData.class,
             retryAnalyzer = CalculatorDeactivatedRetryAnalyzer.class)
-    public void casualTypeAdditionCalculationTest(double p1, double p2, double expectedResult)
+    public void brokenTypeAdditionCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.add(p1, p2), expectedResult);
     }
@@ -35,7 +35,7 @@ public class BrokenCalculationTest extends AbstractTest {
     @Test(groups = {"calculator", "positive", "broken_type"},
             dataProvider = "correct subtraction data", dataProviderClass = TestData.class,
             retryAnalyzer = CalculatorDeactivatedRetryAnalyzer.class)
-    public void casualTypeSubtractionCalculationTest(double p1, double p2, double expectedResult)
+    public void brokenTypeSubtractionCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.subtract(p1, p2), expectedResult);
     }
@@ -43,7 +43,7 @@ public class BrokenCalculationTest extends AbstractTest {
     @Test(groups = {"calculator", "positive", "broken_type"},
             dataProvider = "correct multiplication data", dataProviderClass = TestData.class,
             retryAnalyzer = CalculatorDeactivatedRetryAnalyzer.class)
-    public void casualTypeMultiplicationCalculationTest(double p1, double p2, double expectedResult)
+    public void brokenTypeMultiplicationCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.multiply(p1, p2), expectedResult);
     }
@@ -51,7 +51,7 @@ public class BrokenCalculationTest extends AbstractTest {
     @Test(groups = {"calculator", "positive", "broken_type"},
             dataProvider = "correct division data", dataProviderClass = TestData.class,
             retryAnalyzer = CalculatorDeactivatedRetryAnalyzer.class)
-    public void casualTypeDivisionCalculationTest(double p1, double p2, double expectedResult)
+    public void brokenTypeDivisionCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.divide(p1, p2), expectedResult);
     }

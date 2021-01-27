@@ -1,4 +1,4 @@
-package calculator_tests.casual_calculation_test;
+package calculator_tests.float_inaccurate_calculation_test;
 
 import by.bivis.calculator.CalculatorException;
 import by.bivis.calculator.calculator_factory.CalculatorFactory;
@@ -16,7 +16,7 @@ import static by.bivis.calculator.calculator_factory.calculator_settings.Calcula
 
 @Listeners(UnstableTestListener.class)
 
-public class CasualCalculationTest extends AbstractTest {
+public class FloatInaccurateCalculationTest extends AbstractTest {
     @BeforeClass(alwaysRun = true)
     public void createCalculator() {
         calculator = CalculatorFactory.createCalculator(FLOAT_INACCURATE);
@@ -27,34 +27,34 @@ public class CasualCalculationTest extends AbstractTest {
         calculator = null;
     }
 
-    @Test(groups = {"calculator", "positive", "casual_type"},
+    @Test(groups = {"calculator", "positive", "float_inaccurate_type"},
             dataProvider = "correct addition data", dataProviderClass = TestData.class,
             retryAnalyzer = CalculatorDeactivatedRetryAnalyzer.class)
-    public void casualTypeAdditionCalculationTest(double p1, double p2, double expectedResult)
+    public void floatInaccurateTypeAdditionCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.add(p1, p2), expectedResult);
     }
 
-    @Test(groups = {"calculator", "positive", "casual_type"},
+    @Test(groups = {"calculator", "positive", "float_inaccurate_type"},
             dataProvider = "correct subtraction data", dataProviderClass = TestData.class,
             retryAnalyzer = CalculatorDeactivatedRetryAnalyzer.class)
-    public void casualTypeSubtractionCalculationTest(double p1, double p2, double expectedResult)
+    public void floatInaccurateTypeSubtractionCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.subtract(p1, p2), expectedResult);
     }
 
-    @Test(groups = {"calculator", "positive", "casual_type"},
+    @Test(groups = {"calculator", "positive", "float_inaccurate_type"},
             dataProvider = "correct multiplication data", dataProviderClass = TestData.class,
             retryAnalyzer = CalculatorDeactivatedRetryAnalyzer.class)
-    public void casualTypeMultiplicationCalculationTest(double p1, double p2, double expectedResult)
+    public void floatInaccurateTypeMultiplicationCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.multiply(p1, p2), expectedResult);
     }
 
-    @Test(groups = {"calculator", "positive", "casual_type"},
+    @Test(groups = {"calculator", "positive", "float_inaccurate_type"},
             dataProvider = "correct division data", dataProviderClass = TestData.class,
             retryAnalyzer = CalculatorDeactivatedRetryAnalyzer.class)
-    public void casualTypeDivisionCalculationTest(double p1, double p2, double expectedResult)
+    public void floatInaccurateTypeDivisionCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.divide(p1, p2), expectedResult);
     }

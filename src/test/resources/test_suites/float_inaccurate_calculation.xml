@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="casual_calculation">
-    <test name="CasualCalculation">
+<suite name="float_inaccurate_calculation">
+    <test name="FloatInaccurateCalculation">
         <groups>
             <run>
-                <include name="casual_type"/>
+                <include name="float_inaccurate_type"/>
             </run>
         </groups>
         <packages>

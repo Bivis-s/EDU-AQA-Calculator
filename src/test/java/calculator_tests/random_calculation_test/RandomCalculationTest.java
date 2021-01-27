@@ -30,7 +30,7 @@ public class RandomCalculationTest extends AbstractTest {
     @Test(groups = {"calculator", "positive", "random_type"},
             dataProvider = "correct addition data", dataProviderClass = TestData.class,
             retryAnalyzer = RandomRetryAnalyzer.class)
-    public void casualTypeAdditionCalculationTest(double p1, double p2, double expectedResult)
+    public void randomTypeAdditionCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.add(p1, p2), expectedResult);
     }
@@ -38,7 +38,7 @@ public class RandomCalculationTest extends AbstractTest {
     @Test(groups = {"calculator", "positive", "random_type"},
             dataProvider = "correct subtraction data", dataProviderClass = TestData.class,
             retryAnalyzer = RandomRetryAnalyzer.class)
-    public void casualTypeSubtractionCalculationTest(double p1, double p2, double expectedResult)
+    public void randomTypeSubtractionCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.subtract(p1, p2), expectedResult);
     }
@@ -46,7 +46,7 @@ public class RandomCalculationTest extends AbstractTest {
     @Test(groups = {"calculator", "positive", "random_type"},
             dataProvider = "correct multiplication data", dataProviderClass = TestData.class,
             retryAnalyzer = RandomRetryAnalyzer.class)
-    public void casualTypeMultiplicationCalculationTest(double p1, double p2, double expectedResult)
+    public void randomTypeMultiplicationCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.multiply(p1, p2), expectedResult);
     }
@@ -54,7 +54,7 @@ public class RandomCalculationTest extends AbstractTest {
     @Test(groups = {"calculator", "positive", "random_type"},
             dataProvider = "correct division data", dataProviderClass = TestData.class,
             retryAnalyzer = RandomRetryAnalyzer.class)
-    public void casualTypeDivisionCalculationTest(double p1, double p2, double expectedResult)
+    public void randomTypeDivisionCalculationTest(double p1, double p2, double expectedResult)
             throws CalculatorException {
         Assert.assertEquals(calculator.divide(p1, p2), expectedResult);
     }
