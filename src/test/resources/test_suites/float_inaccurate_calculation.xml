@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="float_inaccurate_calculation">
+    <test name="FloatInaccurateCalculation">
+        <groups>
+            <run>
+                <include name="float_inaccurate_type"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="calculator_tests.*"/>
+        </packages>
+    </test>
+</suite>
